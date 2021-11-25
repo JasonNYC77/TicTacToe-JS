@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UFT-8">
+    <title>Tic Tac Toe - created by Jason Bevans</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='main.css' rel='stylesheet'>
+
+</head>
+<body>
+<div class="container">
+    <table>
+        <tbody>
+        <tr>
+            <td><button id="whosplaying">Play Against Friend</button></td>
+            <td><select id="backgroundselect">
+                <option>Background 1</option>
+                <option>Background 2</option>
+                <option>Background 3</option>
+                <option>Background 4</option>
+            </select></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="container">
+<table class="scoreboard">
+    <tbody>
+    <tr>
+        <td>YOU</td>
+        <td id="otherplayer">COMP.</td>
+        <td>DRAW</td>
+    </tr>
+    <tr>
+        <td id="won">0</td>
+        <td id="lost">0</td>
+        <td id="draw">0</td>
+    </tr>
+
+
+    </tbody>
+
+</table>
+
+    <button class="button" id="reset-button">Start Over</button>
+
+</div>
+<div class="tic-tac-toe">
+    <div id="square1" class="tile no-border free"></div>
+    <div id="square2" class="tile free"></div>
+    <div id="square3" class="tile free"></div>
+    <div id="square4" class="tile no-border tile-middle free"></div>
+    <div id="square5" class="tile tile-middle free"></div>
+    <div id="square6" class="tile tile-middle free"></div>
+    <div id="square7" class="tile no-border free"></div>
+    <div id="square8" class="tile free"></div>
+    <div id="square9" class="tile free"></div>
+</div>
+<div id="markpattern">
+
+</div>
+<div class="container">
+    <h1 id="ended"></h1>
+</div>
+</body>
+
+<script type="text/javascript" src="logic.js"></script>
+<script>
+    init();
+</script>
+</html>
